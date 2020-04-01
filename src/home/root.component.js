@@ -93,7 +93,6 @@ const RGB = ({ match: { params } }) => (
 const styles = {};
 
 styles.fill = {
-  position: "absolute",
   left: 0,
   right: 0,
   top: 0,
@@ -109,7 +108,6 @@ styles.content = {
 styles.nav = {
   padding: 0,
   margin: 0,
-  position: "absolute",
   top: 0,
   height: "40px",
   width: "100%",
@@ -127,14 +125,16 @@ styles.hsl = {
   ...styles.fill,
   color: "white",
   paddingTop: "20px",
-  fontSize: "30px"
+  fontSize: "30px",
+  height: "100%"
 };
 
 styles.rgb = {
   ...styles.fill,
   color: "white",
   paddingTop: "20px",
-  fontSize: "30px"
+  fontSize: "30px",
+  height: "100%"
 };
 
 export default AnimationExample;
